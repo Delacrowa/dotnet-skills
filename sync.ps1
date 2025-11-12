@@ -8,7 +8,15 @@ param(
 $ErrorActionPreference = "Stop"
 
 $RepoDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
-$BackupDir = Join-Path $env:USERPROFILE ".csharp-guides-backup\$(Get-Date -Format 'yyyyMMdd-HHmmss')"
+
+# Detect OS and set home directory
+if ($IsWindows -or $env:OS -eq "Windows_NT") {
+    $HomeDir = $env:USERPROFILE
+} else {
+    $HomeDir = $env:HOME
+}
+
+$BackupDir = Join-Path $HomeDir ".csharp-guides-backup/$(Get-Date -Format 'yyyyMMdd-HHmmss')"
 
 if ($DryRun) {
     Write-Host "[DRY RUN] C# Coding Guides Sync - DRY RUN MODE" -ForegroundColor Yellow
@@ -27,7 +35,7 @@ if ($DryRun) {
 }
 
 # Target directory
-$ClaudeDir = Join-Path $env:USERPROFILE ".claude"
+$ClaudeDir = Join-Path $HomeDir ".claude"
 
 Write-Host "[DIR] Target directory: $ClaudeDir" -ForegroundColor Yellow
 
