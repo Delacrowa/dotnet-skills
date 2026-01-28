@@ -12,9 +12,11 @@
     "./skills/akka/testing-patterns",
     "./skills/akka/hosting-actor-patterns",
     "./skills/akka/aspire-configuration",
+    "./skills/akka/management",
     "./skills/aspire/integration-testing",
     "./skills/csharp/coding-standards",
     "./skills/data/efcore-patterns",
+    "./skills/microsoft-extensions/configuration",
     "./skills/testing/testcontainers",
     "./skills/testing/playwright-blazor",
     "./skills/meta/marketplace-publishing"
