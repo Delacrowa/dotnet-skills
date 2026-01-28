@@ -18,6 +18,7 @@
     "./skills/data/efcore-patterns",
     "./skills/dotnet/project-structure",
     "./skills/dotnet/local-tools",
+    "./skills/dotnet/slopwatch",
     "./skills/microsoft-extensions/configuration",
     "./skills/testing/testcontainers",
     "./skills/testing/playwright-blazor"
