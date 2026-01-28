@@ -16,6 +16,8 @@
     "./skills/aspire/integration-testing",
     "./skills/csharp/coding-standards",
     "./skills/data/efcore-patterns",
+    "./skills/dotnet/project-structure",
+    "./skills/dotnet/local-tools",
     "./skills/microsoft-extensions/configuration",
     "./skills/testing/testcontainers",
     "./skills/testing/playwright-blazor"
